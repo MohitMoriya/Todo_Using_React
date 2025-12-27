@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure_React</title>
+</head>
+<body>
+<!-- 
+     //This is how we can use React without JSX
+     // This is HTML file. code part
+     // Step 1: Create a div with id root
+     // this part will be written in public/index.html in create-react-app -->
+    <div id="root"></div>
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script> 
+    <!--  this upper two lines parts will automatically provided by create-react-app -->
+
+
+// js file code part
+// Step 2: Create a component using React.createElement
+<script>
+
+    const App = () =>{
+    return  React.createElement('div',{},React.createElement('h1',{},'Welcome to React')); // it will not render automatically 
+    }
+
+    // this upper part will be written in App.js in create-react-app
+
+     const rootNode = document.getElementById("root"); // html file ke div ko access krrege by its root id then uska use krke react component ko render krenge. rootNode ek variable hai jisme humne div ko store krliya hai.matlab rootNode html ke div ko point kr rha hai
+     const root = ReactDOM.createRoot(rootNode);// ab hamne us rootNode (indirectly div ko) ko ReactDOM se root banadiya hai. ab hum is root ka use krke apne component ko render kr skte hai.
+
+     root.render(App());
+
+    //  this upper part will be written in index.js in create-react-app
+   
+</script>
+
+</body>
+</html>

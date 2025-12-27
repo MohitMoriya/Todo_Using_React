@@ -1,0 +1,11 @@
+{
+  "name": "react-from-sigma",
+  "version": "1.0.0",
+  "description": "some description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohit Moriya",
+  "license": "ISC"
+}
